@@ -1,0 +1,125 @@
+.manual-box {
+    font-family: "DV Source Sans 3", Arial, Helvetica, sans-serif;
+    color: var(--mm-black);
+    background-color:var(--mm-white);
+    max-width: 400px;
+    margin:0 auto;
+    input {
+        display:none;
+    }
+    
+    .headline {
+        text-align: left;
+        font-size: 19px;
+        line-height: 140%;
+        font-weight: 700;
+        align-self: stretch;
+        display:block;
+        margin-top:25px;
+        margin-bottom:15px;
+    }
+    
+    .ausklapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: center;
+        align-self: stretch;
+        flex-shrink: 0;
+    }
+    
+    .button {
+        display: flex;
+        flex-direction: row;
+        gap: 0px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-self: stretch;
+        flex-shrink: 0;
+        cursor:pointer;
+        margin-bottom:5px;
+    }
+
+     .ausklappertext {
+        text-align: left;
+        font-size: 15px;
+        line-height: 110%;
+        font-weight: 600;
+        margin-left:10px;
+        margin-top:5px;
+    }
+    
+     .copy {
+        text-align: left;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        margin-bottom:10px;
+        position: relative;
+        align-self: stretch;
+        opacity: 0; /* Initially hidden */
+        max-height: 0; /* Initially hidden */
+        overflow: hidden; /* Initially hidden */
+        transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+        a {
+            color:var(--mm-grey-200);
+            text-decoration: underline;
+        }
+        .subline {
+            font-weight:700;
+        }
+    }
+}
+
+
+
+.icons-navigation-upvote {
+    display:inline;
+}
+
+.icons-navigation-downvote {
+    display:none;
+}
+
+.manual-box .icons-navigation-upvote {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    stroke: var(--mm-black);
+}
+
+.manual-box .icons-navigation-downvote {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    overflow: visible;
+    stroke: var(--mm-black);
+}
+
+
+
+.manual-box input:checked + .ausklapper label .copy {
+    opacity: 1;
+    max-height: 6000px;
+  }
+
+.manual-box input:checked + .ausklapper label .icons-navigation-downvote {
+    display:inline;
+  }
+
+.manual-box input:checked + .ausklapper label .icons-navigation-upvote {
+    display:none;
+  }
+
+
+
+.manual-box a:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+

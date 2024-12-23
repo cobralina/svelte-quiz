@@ -1,0 +1,50 @@
+{
+  "Date": {
+    "publication": "01.01.2000",
+    "deadline": "31.12.2000"
+  },
+  "Price": {
+    "pricetext": "Einen Kessel Buntes",
+    "pricelink": "https://www.preislink.de"
+  },
+  "Quizitems": [
+    {
+      "explainer": "Donald Duck ist der tollpatschige Held aus Entenhausen. Er ist Onkel von drei kleinen Enten.",
+      "question": "Wie heißen seine Neffen?",
+      "answer": "Tick Trick Track",
+      "solutionletters": [
+        4,
+        14
+      ],
+      "userinput": []
+    },
+    {
+      "explainer": "Obelix ist auch ein tollpatschiger Held, allerdings nicht aus Entenhausen. Er kommt aus einem kleinen Dorf in Gallien. Sein treuer Begleiter ist ein kleiner Hund.",
+      "question": "Wie heißt der Hund von Obelix?",
+      "answer": "Idefix",
+      "solutionletters": [
+        4
+      ],
+      "userinput": []
+    },
+    {
+      "explainer": "Gesucht ist ein dicker, rotgetigerter Kater, der gern Lasagne frisst und seinen Besitzer in den Wahnsinn treibt.",
+      "question": "Wie heißt der gesuchte Kater?",
+      "answer": "Garfield",
+      "solutionletters": [
+        4,
+        6
+      ],
+      "userinput": []
+    },
+    {
+      "explainer": "Der Comic-Westernheld schießt schneller als sein Schatten, ist meist auf der Jagd nach den Daltons und hat ein eigenwilliges Pferd namens Jolly Jumper.",
+      "question": "Welchen Helden suchen wir?",
+      "answer": "Lucky Luke",
+      "solutionletters": [
+        10
+      ],
+      "userinput": []
+    }
+  ]
+}

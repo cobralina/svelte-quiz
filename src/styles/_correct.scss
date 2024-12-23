@@ -1,0 +1,60 @@
+.fraktur {
+  margin: 0 auto;
+  background-image: url("../assets/fraktur.svg");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  margin-top: 20px;
+  @media (prefers-color-scheme: dark) {
+    background-image: url("../assets/fraktur-dm.svg");
+  }
+}
+
+.layer-headline {
+  font-family: "DV Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.solution-word {
+  text-transform: uppercase;
+  font-family: "DV Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  font-size: 13px;
+  border: 1px solid var(--mm-grey-600);
+  border-radius: 2px;
+  width: 312px;
+  font-family: "DV Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--mm-grey-200);
+  @media only screen and (max-width: $mobilebreak) {
+    width: 92%;
+  }
+}
+.input-field::placeholder {
+  color: var(--mm-grey-600);
+  opacity: 1;
+}
+
+// Polopoly-Bugfixes:
+
+.article .input-field {
+  padding: 5px;
+  width: 295px;
+}

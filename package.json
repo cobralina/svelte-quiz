@@ -1,0 +1,22 @@
+{
+  "name": "2024-literatur-quiz",
+  "private": true,
+  "version": "0.0.10",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "stage": "vite build --mode stage",
+    "release": "vite build --mode production"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^4.0.0",
+    "sass": "^1.81.0",
+    "svelte": "^5.0.3",
+    "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}

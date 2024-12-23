@@ -1,0 +1,49 @@
+.solution_container {
+  background-color: var(--mm-mid-violet);
+  max-width: 768px;
+  margin: 0 auto;
+  border-radius: 2px;
+  padding: 20px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+  text-align: center;
+  .headline {
+    font-family: "DV Source Serif 4";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+
+  .solution_circles {
+    display: flex;
+    width: auto;
+    gap: 5px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    .violet_circle {
+      background-color: var(--mm-violet);
+      color: var(--mm-white);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative;
+    }
+  }
+}
+
+.solution_button {
+  width: 220px;
+  margin: 0 auto;
+  margin-top:15px;
+  @media only screen and (max-width: $mobilebreak) {
+    width:100%;
+  }
+}

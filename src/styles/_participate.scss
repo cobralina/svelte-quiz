@@ -1,0 +1,32 @@
+.nl-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.checkmark {
+  background-color: var(--mm-faz-grey);
+  border: 1px solid var(--mm-faz-grey);
+  width: 36px;
+  height: 16px;
+  margin-right: 8px;
+  margin-top: -30px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--mm-black);
+  border-width: 0 1.5px 1.5px 0;
+  transform: rotate(45deg);
+}
+
+input[type="checkbox"] {
+  display: none;
+}

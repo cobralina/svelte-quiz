@@ -1,0 +1,76 @@
+.circles_container {
+  background-color: var(--mm-white);
+  font-family: "DV Source Sans 3", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  justify-content: center;
+  display: flex;
+  width: auto;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  @media only screen and (max-width: $mobilebreak) {
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .default_circle {
+    background-color: var(--mm-black);
+    color: var(--mm-white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+  }
+  .violet_circle {
+    background-color: var(--mm-violet);
+    color: var(--mm-white);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    position: relative;
+  }
+  .current_circle {
+    width: 30px;
+    height: 39px;
+    position: relative;
+    background-color: var(--mm-violet);
+    color: var(--mm-white);
+    clip-path: path(
+      "M30 15.25C30 24.7564 18.5514 35.9434 15.658 38.6189C15.2856 38.9632 14.7183 38.9569 14.3518 38.6062C11.4746 35.8531 0 24.3058 0 15.25C0 6.96573 6.71573 0.25 15 0.25C23.2843 0.25 30 6.96573 30 15.25Z"
+    );
+  }
+  .small_circle {
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--mm-black);
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--mm-black);
+    border-radius: 50%;
+    background-color: var(--mm-white);
+    z-index: 100;
+    position: absolute;
+    top: -8px;
+    left: -8px;
+  }
+  .small_circle_container {
+    width: 30px;
+    height: 39px;
+    position: relative;
+  }
+}
+
+// polopoly hacks:
+.article .small_circle {
+  line-height: 17px;
+  width: 20px;
+  height: 20px;
+}
